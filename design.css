@@ -1,0 +1,188 @@
+.general {
+    margin: 30px 30px 30px 30px;
+    min-width: 320px;
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.start {
+    display: grid;
+    grid-template-rows: repeat(minmax(300px, 1fr));
+}
+
+.automatic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    min-width: 340px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: wheat;
+    margin: 30px 10px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(7, 169, 233, 0.507);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: -10px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card .ImageBox {
+    position: relative;
+    top: 1.67em;
+    left: 1.8em;
+    z-index: 1;
+}
+
+.container .card .ImageBox img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.delight {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    width: 15rem;
+    height: 10rem;
+
+}
+
+.Box {
+    margin: 15px 10px;
+    padding: 5px 15px;
+    position: relative;
+    bottom: 285px;
+    transition: 0.9s ease-in-out;
+    min-width: 300px;
+    max-width: 500px;
+    height: 225px;
+    background-color: wheat;
+    z-index: 0; 
+    opacity: 0;
+}
+
+.container:hover .content {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    transition-delay: 0.3s;
+}
+
+.container:hover .Box {
+    opacity: 1;
+    z-index: 1;
+    transition: transform 333ms ease;
+    transform: translateY(240px);
+}
+
+.titles {
+    font-family: 'Arial', 'Verdana', sans-serif;
+    font-variant: small-caps;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2.5em 0px 5px 0px;
+}
+
+.main_title
+{
+    padding: 1% 1% 1% 1%;
+    border-radius: 10px;
+    background-color: rgb(75, 53, 53);
+    font-family: 'Arial', 'Verdana', sans-serif;
+    font-variant: small-caps;
+    font-size: 20px;
+    font-weight: bo ld;
+    color: white;
+}
+
+.fancy {
+    font-family:'Verdana', 'sans-serif';
+    font-variant: small-caps;   
+    font-size:16px;
+}
+
+.price{
+    font-family:'Verdana', 'sans-serif';
+    font-variant: small-caps;   
+    font-style: italic;
+}
+ul
+{
+    margin: 5px 0px 0px 0px;
+}
+
+.people {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    min-height: 200px;
+    min-width: 340px;
+    max-width: 500px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.photo_user
+{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    border: 1px;
+    border-color: black;
+    border-radius: 500px;
+    height: 50%;
+    width: 20%;
+    padding: 1% 1% 1% 1%;
+    margin: 1% 1% 1% 1%;
+}
+
+.comment{
+    position: relative;
+    margin-left: 10px;
+    font-family:'Verdana', 'sans-serif';
+    font-variant: small-caps;   
+    font-size:16px;
+    min-width: 340px;
+    max-width: 500px;
+}
+
+.rate{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    justify-items: start;
+    align-items: start;
+    gap: 2em 250px;
+    
+}
+
