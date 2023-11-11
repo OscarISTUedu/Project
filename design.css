@@ -138,10 +138,17 @@
     font-family:'Verdana', 'sans-serif';
     font-variant: small-caps;   
     font-style: italic;
+    margin-top: 10px;
 }
 ul
 {
     margin: 5px 0px 0px 0px;
+}
+
+.below {
+
+margin-bottom: 20px;
+
 }
 
 .people {
@@ -185,4 +192,18 @@ ul
     gap: 2em 250px;
     
 }
+
+a[href^="tel:"] {
+    font-size: 16px;
+    line-height: 32px;
+    color: #4cb3d3;
+    margin-right: 4em;
+  }
+
+  a[href^="mailto:"] {
+    font-size: 16px;
+    line-height: 32px;
+    color: #4cb3d3;
+    margin-right: 4em;
+  }
 
